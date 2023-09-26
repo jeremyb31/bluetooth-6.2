@@ -450,6 +450,10 @@ static const struct usb_device_id blacklist_table[] = {
 	{ USB_DEVICE(0x0e5e, 0x6622),
 	  .driver_info = BTUSB_BROKEN_ISOC | BTUSB_CW6622},
 
+	/* Integrated System Solution Corp. KY-BT100 Bluetooth Adapter */
+	{ USB_DEVICE(0x1131, 0x1001),
+	  .driver_info = BTUSB_CW6622},
+
 	/* Roper Class 1 Bluetooth Dongle (Silicon Wave based) */
 	{ USB_DEVICE(0x1310, 0x0001), .driver_info = BTUSB_SWAVE },
 
